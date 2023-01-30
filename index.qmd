@@ -4,7 +4,7 @@ listing:
   contents: 
     - "*.qmd"
     - "*.ipynb"
-    - "!stats/"
+    - "!stats_and_public_health_project/"
     - "!about.qmd"
   sort: "date desc"
   type: default
