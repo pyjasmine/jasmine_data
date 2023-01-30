@@ -1,3 +1,6 @@
 [submodule "posts/stats_and_public_health_project"]
 	path = posts/stats_and_public_health_project
 	url = https://github.com/pyjasmine/stats_and_public_health_project
+[submodule "posts/stats/stats_and_public_health_project"]
+	path = posts/stats/stats_and_public_health_project
+	url = https://github.com/pyjasmine/stats_and_public_health_project
