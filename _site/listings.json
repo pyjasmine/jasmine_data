@@ -2,8 +2,18 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/stats/stats_and_public_health_project/jasmine_m_ stats_and_public_health_part_1.html",
+      "/posts/stats/stats_and_public_health_project/jasmine_m_stats_and_public_health_part _2.html",
+      "/posts/stats/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/stats/index.html",
+    "items": [
+      "/posts/stats/stats_and_public_health_project/jasmine_m_ stats_and_public_health_part_1.html",
+      "/posts/stats/stats_and_public_health_project/jasmine_m_stats_and_public_health_part _2.html"
     ]
   }
 ]

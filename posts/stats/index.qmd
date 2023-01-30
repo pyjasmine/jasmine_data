@@ -1,7 +1,7 @@
 ---
 title: "West Nile Virus"
 listing:
-  contents: stats
+  contents: stats_and_public_health_project
   sort: "date desc"
   type: default
   categories: true
