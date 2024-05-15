@@ -5,7 +5,7 @@ about:
   template: jolla
   links:
     - icon: linkedin
-      text: LinkedIn
+      text: Linkedin
       href: https://www.linkedin.com/in/jasmine-marzouk/
     - icon: github
       text: Github
