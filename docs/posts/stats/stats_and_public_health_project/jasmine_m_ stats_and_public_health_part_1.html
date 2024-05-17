@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Portfolio – jasmine_m_-stats_and_public_health_part_1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Portfolio</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/pyjasmine"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+<section id="west-nile-virus-stats-and-public-health-part-1" class="level1">
+<h1><u>West Nile Virus</u>: Stats and Public Health Part 1</h1>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Importing libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Importing data from CSV to dataframe</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'mosquito_data.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checking dataframe dictionary</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 18495 entries, 0 to 18494
+Data columns (total 13 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   Year             18495 non-null  int64  
+ 1   Week             18495 non-null  int64  
+ 2   Address Block    18495 non-null  object 
+ 3   Block            18495 non-null  int64  
+ 4   Trap             18495 non-null  object 
+ 5   Trap type        18495 non-null  object 
+ 6   Date             18495 non-null  object 
+ 7   Mosquito number  18495 non-null  int64  
+ 8   Mosquito ID      18495 non-null  object 
+ 9   WNV Present      18495 non-null  object 
+ 10  Species          18495 non-null  object 
+ 11  Lat              15571 non-null  float64
+ 12  Lon              15571 non-null  float64
+dtypes: float64(2), int64(4), object(7)
+memory usage: 1.8+ MB</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>(18495, 13)</code></pre>
+</div>
+</div>
+<div class="cell" data-scrolled="true" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Taking a look at the data in the dataframe</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="8">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Week</th>
+      <th>Address Block</th>
+      <th>Block</th>
+      <th>Trap</th>
+      <th>Trap type</th>
+      <th>Date</th>
+      <th>Mosquito number</th>
+      <th>Mosquito ID</th>
+      <th>WNV Present</th>
+      <th>Species</th>
+      <th>Lat</th>
+      <th>Lon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T910</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>2</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>52XX S KOLMAR AVE</td>
+      <td>52</td>
+      <td>T114</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>1</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>41.798211</td>
+      <td>-87.736925</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>58XX N WESTERN AVE</td>
+      <td>58</td>
+      <td>T028</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>2</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>41.987245</td>
+      <td>-87.689417</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>39XX N SPRINGFIELD AVE</td>
+      <td>39</td>
+      <td>T228</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>1</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>41.953664</td>
+      <td>-87.724987</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>131XX S BRANDON AVE</td>
+      <td>131</td>
+      <td>T209</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>9</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>41.657069</td>
+      <td>-87.546049</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="basic-data-wrangling" class="level4">
+<h4 class="anchored" data-anchor-id="basic-data-wrangling">Basic Data Wrangling</h4>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#1-Creating a copy of df to make changes to new df1</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df.copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df1.head(<span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Week</th>
+      <th>Address Block</th>
+      <th>Block</th>
+      <th>Trap</th>
+      <th>Trap type</th>
+      <th>Date</th>
+      <th>Mosquito number</th>
+      <th>Mosquito ID</th>
+      <th>WNV Present</th>
+      <th>Species</th>
+      <th>Lat</th>
+      <th>Lon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T910</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>2</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019</td>
+      <td>39</td>
+      <td>52XX S KOLMAR AVE</td>
+      <td>52</td>
+      <td>T114</td>
+      <td>GRAVID</td>
+      <td>2019-09-26 00:09:00</td>
+      <td>1</td>
+      <td>Res</td>
+      <td>negative</td>
+      <td>CULEX RESTUANS</td>
+      <td>41.798211</td>
+      <td>-87.736925</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Changing Date column to datetime format</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Date'</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">'Date'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checking dtype has changed.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Date'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>0       2019-09-26 00:09:00
+1       2019-09-26 00:09:00
+2       2019-09-26 00:09:00
+3       2019-09-26 00:09:00
+4       2019-09-26 00:09:00
+                ...        
+18490   2016-09-09 00:09:00
+18491   2007-08-24 00:08:00
+18492   2016-07-27 00:07:00
+18493   2017-08-17 00:08:00
+18494   2015-08-20 00:08:00
+Name: Date, Length: 18495, dtype: datetime64[ns]</code></pre>
+</div>
+</div>
+<p>The date column format has been changed from ‘object’ to ‘datetime64[ns].’</p>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#2- Categorical data:</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Species'</span>].sample(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="13">
+<pre><code>6433     CULEX RESTUANS
+4419     CULEX RESTUANS
+2488     CULEX RESTUANS
+7865     CULEX RESTUANS
+13728     CULEX PIPIENS
+Name: Species, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'WNV Present'</span>].sample(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>11129    negative
+9349     negative
+9974     negative
+16204    positive
+11009    negative
+Name: WNV Present, dtype: object</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Species'</span>].value_counts().plot(kind<span class="op">=</span><span class="st">'barh'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-13-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The data shows that there is a higher number of <em>Culex Restuans</em> species of Mosquitos.</p>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'WNV Present'</span>].value_counts().plot(kind<span class="op">=</span><span class="st">'bar'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>                                      )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-14-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Most mosquitos that were caught in the traps do not carry the West Nile Virus.</p>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Numerical Data</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Year'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<pre><code>0        2019
+1        2019
+2        2019
+3        2019
+4        2019
+         ... 
+18490    2016
+18491    2007
+18492    2016
+18493    2017
+18494    2015
+Name: Year, Length: 18495, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Mosquito number'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>0         2
+1         1
+2         2
+3         1
+4         9
+         ..
+18490     4
+18491    19
+18492    34
+18493    50
+18494     6
+Name: Mosquito number, Length: 18495, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Looking at Year column distribution:</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Year'</span>].value_counts() <span class="op">/</span> df1.shape[<span class="dv">0</span>]<span class="op">*</span><span class="fl">100.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>2007    11.576102
+2014    10.813733
+2016     9.970262
+2013     8.780752
+2010     7.553393
+2012     7.526358
+2018     7.358746
+2019     6.536902
+2015     6.369289
+2009     6.136794
+2011     6.055691
+2017     6.001622
+2008     5.320357
+Name: Year, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Year'</span>].value_counts().plot(kind<span class="op">=</span><span class="st">'bar'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>&lt;AxesSubplot:&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-18-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>More WNV tests were performed in 2007, with the number of tests performed dropping each year.</p>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Looking at Mosquito Number column distribution:</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Mosquito number'</span>].mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="21">
+<pre><code>10.879913490132468</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Mosquito number'</span>].median()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<pre><code>5.0</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>df1[<span class="st">'Mosquito number'</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>1     4141
+2     2263
+3     1564
+4     1105
+5      918
+6      722
+50     647
+7      610
+8      536
+9      437
+10     366
+11     362
+12     343
+13     293
+14     256
+15     239
+16     225
+17     211
+18     189
+21     182
+19     166
+23     153
+20     152
+27     136
+26     129
+31     128
+29     127
+28     118
+24     116
+25     116
+22     115
+32     103
+47      97
+37      95
+46      92
+33      91
+36      81
+43      81
+34      80
+45      76
+30      75
+39      71
+44      70
+35      67
+41      65
+48      65
+42      63
+38      63
+40      49
+49      46
+Name: Mosquito number, dtype: int64</code></pre>
+</div>
+</div>
+<p>The Mosquito number column is the counted number of mosquitos caught in each trap, applying the <code>values_counted()</code> counts each time the same number of mosquitos was caught.</p>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>plt.hist(df1[<span class="st">'Mosquito number'</span>], bins<span class="op">=</span><span class="dv">25</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Mosquitos Caught in a Trap'</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Occurance'</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Mosquito Numbers'</span>)</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>plt.axvline(df1[<span class="st">'Mosquito number'</span>].median(), label<span class="op">=</span><span class="st">'median'</span>, color<span class="op">=</span><span class="st">'cornflowerblue'</span>)</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>plt.axvline(df1[<span class="st">'Mosquito number'</span>].mean(), label<span class="op">=</span><span class="st">'mean'</span>, color<span class="op">=</span><span class="st">'goldenrod'</span>)</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The above plot is a histogram showing the occurance of number of mosquitos caught each time traps were laid out. According to the distribution, traps are more likely to trap between 5 and 10 mosquitos per trap. There are some outlier values at the 50 count.</p>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Visualising the distribution on a boxplot:</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span>df1[<span class="st">'Mosquito number'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+<pre><code>&lt;AxesSubplot:xlabel='Mosquito number'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-23-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Using a boxplot to better visualise this columns, it is apparent that there are a lot of outliers, this is most likely caused by how the data is split between the rows, with a cap on the number of mosquitos at 50, this means it is best to keep these outliers as they are important data points.</p>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co">#3- Looking at number of duplicated rows:</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>df1.duplicated().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>658</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="bu">round</span>(df1.duplicated().<span class="bu">sum</span>()<span class="op">/</span> df1.shape[<span class="dv">0</span>]<span class="op">*</span><span class="fl">100.0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="27">
+<pre><code>4.0</code></pre>
+</div>
+</div>
+<p>4% of the rows are duplicates.</p>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Taking a look at the duplicate rows:</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>df1[df1.duplicated(keep<span class="op">=</span><span class="va">False</span>)].head(<span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="28">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Year</th>
+      <th>Week</th>
+      <th>Address Block</th>
+      <th>Block</th>
+      <th>Trap</th>
+      <th>Trap type</th>
+      <th>Date</th>
+      <th>Mosquito number</th>
+      <th>Mosquito ID</th>
+      <th>WNV Present</th>
+      <th>Species</th>
+      <th>Lat</th>
+      <th>Lon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>187</th>
+      <td>2019</td>
+      <td>35</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T913</td>
+      <td>GRAVID</td>
+      <td>2019-08-29 00:08:00</td>
+      <td>3</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>273</th>
+      <td>2019</td>
+      <td>34</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T901</td>
+      <td>GRAVID</td>
+      <td>2019-08-22 00:08:00</td>
+      <td>16</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>310</th>
+      <td>2019</td>
+      <td>33</td>
+      <td>100XX W OHARE</td>
+      <td>100</td>
+      <td>T903</td>
+      <td>GRAVID</td>
+      <td>2019-08-15 00:08:00</td>
+      <td>3</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>341</th>
+      <td>2019</td>
+      <td>33</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T913</td>
+      <td>GRAVID</td>
+      <td>2019-08-15 00:08:00</td>
+      <td>15</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>398</th>
+      <td>2019</td>
+      <td>32</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T913</td>
+      <td>GRAVID</td>
+      <td>2019-08-08 00:08:00</td>
+      <td>8</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3845</th>
+      <td>2016</td>
+      <td>29</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T906</td>
+      <td>GRAVID</td>
+      <td>2016-07-21 00:07:00</td>
+      <td>12</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3851</th>
+      <td>2016</td>
+      <td>29</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T913</td>
+      <td>GRAVID</td>
+      <td>2016-07-21 00:07:00</td>
+      <td>42</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3859</th>
+      <td>2016</td>
+      <td>29</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T911</td>
+      <td>GRAVID</td>
+      <td>2016-07-21 00:07:00</td>
+      <td>47</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3868</th>
+      <td>2016</td>
+      <td>28</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T905</td>
+      <td>GRAVID</td>
+      <td>2016-07-14 00:07:00</td>
+      <td>24</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3877</th>
+      <td>2016</td>
+      <td>28</td>
+      <td>100XX W OHARE AIRPORT</td>
+      <td>100</td>
+      <td>T902</td>
+      <td>GRAVID</td>
+      <td>2016-07-14 00:07:00</td>
+      <td>50</td>
+      <td>Res</td>
+      <td>positive</td>
+      <td>CULEX RESTUANS</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>100 rows × 13 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Removing duplicated rows and assigning to a new variable df2:</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> df1.drop_duplicates()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Checking that duplicates have been dropped:</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>df2.duplicated().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>0</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking for duplicated columns:</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>df1.T.duplicated(keep<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="31">
+<pre><code>Year               False
+Week               False
+Address Block      False
+Block              False
+Trap               False
+Trap type          False
+Date               False
+Mosquito number    False
+Mosquito ID        False
+WNV Present        False
+Species            False
+Lat                False
+Lon                False
+dtype: bool</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 4- Looking for null values in the data:</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>df2.isna().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="32">
+<pre><code>Year                  0
+Week                  0
+Address Block         0
+Block                 0
+Trap                  0
+Trap type             0
+Date                  0
+Mosquito number       0
+Mosquito ID           0
+WNV Present           0
+Species               0
+Lat                2266
+Lon                2266
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="33">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Percentage of null values in the columns</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>df2.isna().<span class="bu">sum</span>()<span class="op">/</span>df2.shape[<span class="dv">0</span>]<span class="op">*</span><span class="fl">100.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="33">
+<pre><code>Year                0.00000
+Week                0.00000
+Address Block       0.00000
+Block               0.00000
+Trap                0.00000
+Trap type           0.00000
+Date                0.00000
+Mosquito number     0.00000
+Mosquito ID         0.00000
+WNV Present         0.00000
+Species             0.00000
+Lat                12.70393
+Lon                12.70393
+dtype: float64</code></pre>
+</div>
+</div>
+<p>Most of the null values are in the latitude and longitude columns, ~13% null values.</p>
+<div class="cell" data-execution_count="34">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Taking a closer look at Lat:</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lat'</span>].mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="34">
+<pre><code>41.83996347772076</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="35">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lat'</span>].median()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="35">
+<pre><code>41.845715401999996</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="36">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lat'</span>].mode()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="36">
+<pre><code>0    41.956299
+dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="37">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lat'</span>].describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="37">
+<pre><code>count    15571.000000
+mean        41.839963
+std          0.111374
+min         41.644720
+25%         41.742670
+50%         41.845715
+75%         41.945961
+max         42.017801
+Name: Lat, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="38">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>plt.hist(df2[<span class="st">'Lat'</span>].values, bins<span class="op">=</span><span class="dv">25</span>)</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>plt.axvline(df2[<span class="st">'Lat'</span>].mean(), label<span class="op">=</span><span class="st">'mean'</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>plt.axvline(df2[<span class="st">'Lat'</span>].median(), label<span class="op">=</span><span class="st">'median'</span>, color<span class="op">=</span><span class="st">'yellow'</span>)</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Latitude'</span>)</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Latitude histogram'</span>)</span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/numpy/lib/histograms.py:839: RuntimeWarning: invalid value encountered in greater_equal
+  keep = (tmp_a &gt;= first_edge)
+/home/amina/anaconda3/lib/python3.7/site-packages/numpy/lib/histograms.py:840: RuntimeWarning: invalid value encountered in less_equal
+  keep &amp;= (tmp_a &lt;= last_edge)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-36-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The missing values in column ‘Lat’ will be replaced by using the mean value for Lat column.</p>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lat'</span>] <span class="op">=</span> df2[<span class="st">'Lat'</span>].fillna(df2[<span class="st">'Lat'</span>].mean())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  """Entry point for launching an IPython kernel.</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>df2.isna().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="40">
+<pre><code>Year                  0
+Week                  0
+Address Block         0
+Block                 0
+Trap                  0
+Trap type             0
+Date                  0
+Mosquito number       0
+Mosquito ID           0
+WNV Present           0
+Species               0
+Lat                   0
+Lon                2266
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Taking a look at Lon column:</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lon'</span>].mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="41">
+<pre><code>-87.69164248395428</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lon'</span>].median()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="42">
+<pre><code>-87.691697729</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lon'</span>].mode()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="43">
+<pre><code>0   -87.797517
+dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lon'</span>].describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="44">
+<pre><code>count    15571.000000
+mean       -87.691642
+std          0.076545
+min        -87.854473
+25%        -87.747459
+50%        -87.691698
+75%        -87.637873
+max        -87.531051
+Name: Lon, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="45">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>plt.hist(df2[<span class="st">'Lon'</span>].values, bins<span class="op">=</span><span class="dv">25</span>)</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>plt.axvline(df2[<span class="st">'Lon'</span>].mean(), label<span class="op">=</span><span class="st">'mean'</span>, color<span class="op">=</span><span class="st">'green'</span>)</span>
+<span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>plt.axvline(df2[<span class="st">'Lon'</span>].median(), label<span class="op">=</span><span class="st">'median'</span>, color<span class="op">=</span><span class="st">'yellow'</span>)</span>
+<span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Longitude'</span>)</span>
+<span id="cb74-6"><a href="#cb74-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb74-7"><a href="#cb74-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Longitude histogram'</span>)</span>
+<span id="cb74-8"><a href="#cb74-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-43-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The missing values in column ‘Lon’ will be replaced by using the mean value for Lon column.</p>
+<div class="cell" data-execution_count="46">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Lon'</span>] <span class="op">=</span> df2[<span class="st">'Lon'</span>].fillna(df2[<span class="st">'Lon'</span>].mean())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  """Entry point for launching an IPython kernel.</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a>df2.isna().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="47">
+<pre><code>Year               0
+Week               0
+Address Block      0
+Block              0
+Trap               0
+Trap type          0
+Date               0
+Mosquito number    0
+Mosquito ID        0
+WNV Present        0
+Species            0
+Lat                0
+Lon                0
+dtype: int64</code></pre>
+</div>
+</div>
+</section>
+<section id="exploring-the-relationship-between-mosquito-number-and-date." class="level4">
+<h4 class="anchored" data-anchor-id="exploring-the-relationship-between-mosquito-number-and-date.">Exploring the relationship between mosquito number and date.</h4>
+<p>Previously looked at mosquito number counts.</p>
+<div class="cell" data-execution_count="48">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>plt.hist(df2[<span class="st">'Mosquito number'</span>], bins<span class="op">=</span><span class="dv">25</span>)</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Mosquitos Caught in a Trap'</span>)</span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Occurance'</span>)</span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Mosquito Numbers'</span>)</span>
+<span id="cb79-6"><a href="#cb79-6" aria-hidden="true" tabindex="-1"></a>plt.axvline(df2[<span class="st">'Mosquito number'</span>].median(), label<span class="op">=</span><span class="st">'median'</span>, color<span class="op">=</span><span class="st">'cornflowerblue'</span>)</span>
+<span id="cb79-7"><a href="#cb79-7" aria-hidden="true" tabindex="-1"></a>plt.axvline(df2[<span class="st">'Mosquito number'</span>].mean(), label<span class="op">=</span><span class="st">'mean'</span>, color<span class="op">=</span><span class="st">'goldenrod'</span>)</span>
+<span id="cb79-8"><a href="#cb79-8" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb79-9"><a href="#cb79-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-46-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>In order to explore the relationship between number of mosquitos caught, I will create four columns titled ‘Month’, ‘Day’, ‘Hour’, and ‘Minute’ which will be extracted from the Date column. This can be done with the following code, and because I already changed the Date column format to datetime64.</p>
+<div class="cell" data-execution_count="49">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Month'</span>] <span class="op">=</span> pd.DatetimeIndex(df2[<span class="st">'Date'</span>]).month</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  """Entry point for launching an IPython kernel.</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="50">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Hour'</span>] <span class="op">=</span> pd.DatetimeIndex(df2[<span class="st">'Date'</span>]).hour</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  """Entry point for launching an IPython kernel.</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="51">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Day'</span>] <span class="op">=</span> pd.DatetimeIndex(df2[<span class="st">'Date'</span>]).day</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  """Entry point for launching an IPython kernel.</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="52">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Minute'</span>] <span class="op">=</span> pd.DatetimeIndex(df2[<span class="st">'Date'</span>]).minute</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/home/amina/anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  """Entry point for launching an IPython kernel.</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="53">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a>df2.groupby(<span class="st">'Year'</span>)[<span class="st">'Mosquito number'</span>].count().plot(kind<span class="op">=</span><span class="st">'bar'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Average number of mosquitos per trap'</span>)</span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Year'</span>)</span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Number of Mosquitos caught per trap per Year'</span>)</span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-51-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Data shows that during 2007 there were more mosquitos caught per trap.</p>
+<div class="cell" data-execution_count="54">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a>df2.groupby(<span class="st">'Month'</span>)[<span class="st">'Mosquito number'</span>].count().plot(kind<span class="op">=</span><span class="st">'bar'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Average number of mosquitos per trap'</span>)</span>
+<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Month'</span>)</span>
+<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Number of Mosquitos caught per trap per month'</span>)</span>
+<span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-52-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Looking at the <code>value_counts()</code> of the number of mosquitos caught is increased during the summer months of June to August. However there is missing data for the rest of the months of the year, so this pattern could change with addition of new data.</p>
+<div class="cell" data-execution_count="55">
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>df2[<span class="st">'Mosquito number'</span>].corr(df2[<span class="st">'Month'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="55">
+<pre><code>-0.04094150320273162</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="56">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a>df2.groupby(<span class="st">'Day'</span>)[<span class="st">'Mosquito number'</span>].count().plot(kind<span class="op">=</span><span class="st">'bar'</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="56">
+<pre><code>&lt;AxesSubplot:xlabel='Day'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-54-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>There is not a pattern in the data of number of mosquitos caught per day, it seems random.</p>
+<div class="cell" data-execution_count="57">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a>df2[[<span class="st">'Mosquito number'</span>, <span class="st">'Trap'</span>, <span class="st">'Day'</span>]].sort_values(by<span class="op">=</span> <span class="st">'Mosquito number'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="57">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mosquito number</th>
+      <th>Trap</th>
+      <th>Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12202</th>
+      <td>1</td>
+      <td>T063</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>3363</th>
+      <td>1</td>
+      <td>T155</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>8129</th>
+      <td>1</td>
+      <td>T089</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>8134</th>
+      <td>1</td>
+      <td>T158</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>8136</th>
+      <td>1</td>
+      <td>T048</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>5943</th>
+      <td>50</td>
+      <td>T002</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>14032</th>
+      <td>50</td>
+      <td>T138</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>17026</th>
+      <td>50</td>
+      <td>T225</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>5989</th>
+      <td>50</td>
+      <td>T002</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>18493</th>
+      <td>50</td>
+      <td>T240B</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+<p>17837 rows × 3 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="relationship-between-mosquito-species-and-wnv-prevalence" class="level4">
+<h4 class="anchored" data-anchor-id="relationship-between-mosquito-species-and-wnv-prevalence">Relationship between mosquito species and WNV prevalence</h4>
+<div class="cell" data-execution_count="58">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Grouping by Species and WNV Present, and aggregating on Species counts:</span></span>
+<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a>df2.groupby([<span class="st">'Species'</span>, <span class="st">'WNV Present'</span>])[<span class="st">'Species'</span>].count().unstack()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="58">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>WNV Present</th>
+      <th>negative</th>
+      <th>positive</th>
+    </tr>
+    <tr>
+      <th>Species</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>CULEX PIPIENS</th>
+      <td>4074</td>
+      <td>1237</td>
+    </tr>
+    <tr>
+      <th>CULEX RESTUANS</th>
+      <td>9309</td>
+      <td>2078</td>
+    </tr>
+    <tr>
+      <th>CULEX SALINARIUS</th>
+      <td>215</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>CULEX TERRITANS</th>
+      <td>903</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="59">
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Percentile of number of negatives and positives per Species:</span></span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a>((df2.groupby([<span class="st">'Species'</span>, <span class="st">'WNV Present'</span>])[<span class="st">'Species'</span>].count()<span class="op">/\</span></span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>df2.groupby(<span class="st">'Species'</span>)[<span class="st">'Species'</span>].count())<span class="op">*</span><span class="dv">100</span>).unstack()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="59">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>WNV Present</th>
+      <th>negative</th>
+      <th>positive</th>
+    </tr>
+    <tr>
+      <th>Species</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>CULEX PIPIENS</th>
+      <td>76.708718</td>
+      <td>23.291282</td>
+    </tr>
+    <tr>
+      <th>CULEX RESTUANS</th>
+      <td>81.751120</td>
+      <td>18.248880</td>
+    </tr>
+    <tr>
+      <th>CULEX SALINARIUS</th>
+      <td>96.846847</td>
+      <td>3.153153</td>
+    </tr>
+    <tr>
+      <th>CULEX TERRITANS</th>
+      <td>98.473282</td>
+      <td>1.526718</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="63">
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>Species_WNV <span class="op">=</span> df2.groupby([<span class="st">'Species'</span>, <span class="st">'WNV Present'</span>])[<span class="st">'Species'</span>].count()<span class="op">/\</span></span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>df2.groupby(<span class="st">'Species'</span>)[<span class="st">'Species'</span>].count()</span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a>pct_registered_df.unstack().plot(kind<span class="op">=</span><span class="st">'barh'</span>, stacked<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>plt.legend(loc <span class="op">=</span> (<span class="fl">1.2</span>, <span class="fl">0.5</span>))</span>
+<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>NameError: name 'pct_registered_df' is not defined</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;Figure size 720x360 with 0 Axes&gt;</code></pre>
+</div>
+</div>
+<p>Overall, of the species tested most mosquitos were negative for WNV, however around 23% of positives are of the species <em>Culex Pipiens</em>.</p>
+</section>
+<section id="relationship-between-the-number-of-mosquitos-caught-and-trap-type" class="level4">
+<h4 class="anchored" data-anchor-id="relationship-between-the-number-of-mosquitos-caught-and-trap-type">Relationship between the number of mosquitos caught and trap type</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw a nested boxplot to show bills by day and time</span></span>
+<span id="cb100-2"><a href="#cb100-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">"Trap type"</span>, y<span class="op">=</span><span class="st">"Mosquito number"</span>, palette<span class="op">=</span>[<span class="st">"orange"</span>, <span class="st">"blue"</span>],data<span class="op">=</span>df2, fliersize<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb100-3"><a href="#cb100-3" aria-hidden="true" tabindex="-1"></a>sns.despine(offset<span class="op">=</span><span class="dv">10</span>, trim<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>GRAVID traps caught less numbers of mosquitos, and also seems to the the trap that corresponds to the outlier data.</li>
+<li>SENTINEL and CDC traps were variable in the number of mosquitos caught per trap. CDC has a lower median suggesting most number of mosquitos caught in these traps tend to be on the lower side.</li>
+<li>OVI trap is not showing a lot of data, however this isn’t a problem with the data, there only seems to be one trap with one successful catch (see follwing table).</li>
+</ul>
+<div class="cell" data-execution_count="66">
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a>df2.groupby([<span class="st">'Mosquito number'</span>, <span class="st">'Trap type'</span>])[<span class="st">'Mosquito number'</span>].count().unstack()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="66">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>Trap type</th>
+      <th>CDC</th>
+      <th>GRAVID</th>
+      <th>OVI</th>
+      <th>SENTINEL</th>
+    </tr>
+    <tr>
+      <th>Mosquito number</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>111.0</td>
+      <td>3997.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>51.0</td>
+      <td>2183.0</td>
+      <td>NaN</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>33.0</td>
+      <td>1503.0</td>
+      <td>NaN</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>26.0</td>
+      <td>1049.0</td>
+      <td>NaN</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>35.0</td>
+      <td>852.0</td>
+      <td>NaN</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7.0</td>
+      <td>689.0</td>
+      <td>NaN</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10.0</td>
+      <td>578.0</td>
+      <td>NaN</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>7.0</td>
+      <td>503.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>7.0</td>
+      <td>390.0</td>
+      <td>NaN</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>5.0</td>
+      <td>345.0</td>
+      <td>NaN</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>5.0</td>
+      <td>339.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>6.0</td>
+      <td>306.0</td>
+      <td>NaN</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>5.0</td>
+      <td>278.0</td>
+      <td>NaN</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>6.0</td>
+      <td>231.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>5.0</td>
+      <td>209.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>7.0</td>
+      <td>214.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>3.0</td>
+      <td>189.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>4.0</td>
+      <td>166.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2.0</td>
+      <td>139.0</td>
+      <td>NaN</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>4.0</td>
+      <td>129.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>4.0</td>
+      <td>166.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>2.0</td>
+      <td>107.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>5.0</td>
+      <td>130.0</td>
+      <td>NaN</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>1.0</td>
+      <td>96.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>5.0</td>
+      <td>103.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>10.0</td>
+      <td>114.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>5.0</td>
+      <td>116.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>1.0</td>
+      <td>112.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>2.0</td>
+      <td>116.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>3.0</td>
+      <td>71.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>4.0</td>
+      <td>107.0</td>
+      <td>NaN</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>4.0</td>
+      <td>85.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>2.0</td>
+      <td>80.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>2.0</td>
+      <td>59.0</td>
+      <td>NaN</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>5.0</td>
+      <td>58.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>1.0</td>
+      <td>77.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>7.0</td>
+      <td>72.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>3.0</td>
+      <td>57.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>2.0</td>
+      <td>62.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>1.0</td>
+      <td>43.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>4.0</td>
+      <td>48.0</td>
+      <td>NaN</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>5.0</td>
+      <td>39.0</td>
+      <td>NaN</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>5.0</td>
+      <td>63.0</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>1.0</td>
+      <td>66.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>5.0</td>
+      <td>64.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>2.0</td>
+      <td>78.0</td>
+      <td>NaN</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>1.0</td>
+      <td>83.0</td>
+      <td>NaN</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>2.0</td>
+      <td>52.0</td>
+      <td>NaN</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>6.0</td>
+      <td>39.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>90.0</td>
+      <td>446.0</td>
+      <td>NaN</td>
+      <td>35.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="relationship-between-species-and-trap-type." class="level4">
+<h4 class="anchored" data-anchor-id="relationship-between-species-and-trap-type.">Relationship between Species and Trap type.</h4>
+<div class="cell" data-execution_count="65">
+<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a>df2.groupby([<span class="st">'Species'</span>, <span class="st">'Trap type'</span>])[<span class="st">'Species'</span>].count().unstack()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="65">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>Trap type</th>
+      <th>CDC</th>
+      <th>GRAVID</th>
+      <th>OVI</th>
+      <th>SENTINEL</th>
+    </tr>
+    <tr>
+      <th>Species</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>CULEX PIPIENS</th>
+      <td>373.0</td>
+      <td>4919.0</td>
+      <td>1.0</td>
+      <td>18.0</td>
+    </tr>
+    <tr>
+      <th>CULEX RESTUANS</th>
+      <td>124.0</td>
+      <td>11076.0</td>
+      <td>NaN</td>
+      <td>187.0</td>
+    </tr>
+    <tr>
+      <th>CULEX SALINARIUS</th>
+      <td>20.0</td>
+      <td>201.0</td>
+      <td>NaN</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>CULEX TERRITANS</th>
+      <td>12.0</td>
+      <td>902.0</td>
+      <td>NaN</td>
+      <td>3.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="64">
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>df2.groupby([<span class="st">'Species'</span>, <span class="st">'Trap type'</span>])[<span class="st">'Species'</span>].count().unstack().plot(kind<span class="op">=</span><span class="st">'bar'</span>, log<span class="op">=</span><span class="va">True</span>, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">5</span>))</span>
+<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span>(<span class="fl">1.2</span>, <span class="fl">0.5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="64">
+<pre><code>&lt;matplotlib.legend.Legend at 0x7fe9d6c06650&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="jasmine_m_ stats_and_public_health_part_1_files/figure-html/cell-62-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<ul>
+<li>Comparing all the Species of mosquitos with the traps that caught them, shows at first glance that GRAVID traps are most successful at catching all species of mosquito, especially <em>Culex Restuans</em>.</li>
+<li>Further CDC appears to be best for catching <em>Culex Pipiens</em>.</li>
+<li>OVI appears to be an unsuccessful trap type overall.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
