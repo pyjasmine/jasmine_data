@@ -9,6 +9,9 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/pyjasmine
+    left:
+      - text: "Home"
+        href: index.qmd
    
 format:
   html:
