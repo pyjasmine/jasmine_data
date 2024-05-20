@@ -1,3 +1,5 @@
 /.quarto/
 posts/welcome/
 posts/post-with-code/
+_site/posts/welcome/
+_site/posts/post-with-code
