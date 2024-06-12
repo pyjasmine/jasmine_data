@@ -1,10 +1,10 @@
 ---
-title: "Some projects I've done :)"
+title: "Some projects I've done"
 listing:
   contents: 
-    - "*.qmd"
+    - "*.qmd" #anything that has qmd will show here unless no (! infront)
     - "*.ipynb"
-    - "!stats_and_public_health_project/"
+    - "!stats_and_public_health_project/" #these won't show from the docs
     - "!about.qmd"
   sort: "date desc"
   type: default
